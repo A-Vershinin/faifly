@@ -1,0 +1,32 @@
+.header {
+  position: relative;
+  color: #ffffff;
+  height: 100vh;
+  background-color: #241c4e;
+}
+
+.header__top {
+  position: relative;
+  padding: rem(14px) 0;
+  color: #ffffff;
+  border-bottom: 1px solid #11d2d0;
+}
+.header__bottom {
+  //height: 100%;
+}
+
+@include mf-tablets {}
+@include mf-laptop {
+  .header__top {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+@include mf-desktop {
+  .header__top {
+    border-bottom: none;
+  }
+}

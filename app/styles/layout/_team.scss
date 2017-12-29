@@ -1,0 +1,126 @@
+.team {
+  position: relative;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2a2648;
+  background-image: url("../../img/bg/bg-team@1x.jpg");
+  @extend %cover;
+  @media #{$retina} {
+    background-image: url("../../img/bg/bg-team@2x.jpg");
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #09052f 0%, #311d5e 100%);
+    opacity: 0.85;
+  }
+}
+.team__title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-family: $font-second;
+  font-size: rem(18px);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.team__desc {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  font-family: $font-second;
+  font-size: rem(14px);
+  font-weight: 400;
+  color: #f9f9f9;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 3rem;
+    height: 2px;
+    background-color: rgba(#ffffff, 0.2);
+  }
+}
+.team__list {
+  @extend %ul-reset;
+  margin-bottom: 20px;
+}
+.team__item {
+  border-radius: 0;
+  border: none;
+  background: transparent;
+}
+.team__pict {
+  height: 100%;
+  background-color: #f5f4f6;
+  overflow: hidden;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.team__pict-img {
+  width: 100%;
+}
+.team__item {
+  margin-bottom: 20px;
+}
+.team__body {
+  border: 1px solid rgba(#e1e1e1, 0.5);
+  border-top: 0;
+  font-family: $font-base;
+  color: #ffffff;
+}
+.team__card-title {
+  margin-bottom: 0;
+  font-size: rem(14px);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.team__text {
+  font-size: rem(13px);
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+.team__become {
+  margin-bottom: 26px;
+  font-family: $font-base;
+  font-size: rem(14px);
+  font-weight: 300;
+  color: #f3f3f3;
+}
+@include mf-tablets {
+  .team__item {
+    margin-bottom: 20px;
+  }
+  .team__pict {
+    max-height: 220px;
+  }
+}
+@include mf-laptop {
+  .team {
+    padding-bottom: 70px;
+  }
+  .team__title {
+    margin-top: 70px;
+    font-size: rem(22px);
+  }
+  .team__desc {
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+  }
+  .team__become {
+    margin-bottom: 26px;
+  }
+  .team__item {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,33 @@
+header.header
+  .header__top
+    .container
+      .row
+        .col.nav.navbar.navbar-expand-md.navbar-light.menu
+          a.navbar-brand.menu__logo.logo(href='#')
+            picture
+              img(src="img/content/logo-desctop@1x.png" srcset="img/content/logo-desctop@2x.png 2x"
+              alt="Tajam logo").logo__link-img
+          button(type="button" data-toggle="collapse" data-target="#navbarSupportedContent", aria-label="Menu", 
+            aria-controls="navbarSupportedContent", 
+            aria-expanded='false').navbar-toggler.collapsed.hamburger.menu__hamburger.hamburger--collapse
+              span.hamburger-box
+                span.hamburger-inner
+          .col.collapse.navbar-collapse.menu__collaps#navbarSupportedContent
+            ul.navbar-nav.menu__list
+              li.nav-item
+                a.nav-link(href='#') Home
+              li.nav-item
+                a.nav-link(href='#') About
+              li.nav-item
+                a.nav-link(href='#') Expertize  
+              li.nav-item.active
+                a.nav-link(href='#') Teams
+              li.nav-item
+                a.nav-link(href='#') Works
+              li.nav-item
+                a.nav-link(href='#') People Say
+              li.nav-item
+                a.nav-link(href='#') Contact
+  .header__bottom
+    include ../blocks/_hero
+  

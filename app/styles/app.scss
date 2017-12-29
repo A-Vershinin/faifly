@@ -1,0 +1,47 @@
+// подключаем все кусочки кодов в главный файл//
+
+// Переменные и миксины//
+@import "./basic/_variablesVendor";
+@import "./basic/_variables";
+@import "./basic/_mixins";
+//@import "./basic/pixel-glass";
+// @import "./basic/_png-sprites.scss";
+
+// библиотеки //
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/card";
+
+
+// Глобальные стили для всего проекта//
+@import "./basic/_fonts";
+@import "./basic/_grid";
+@import "./basic/_main";
+// @import "sprites/sprite.scss";
+
+// BEM-блоки //
+// index.html
+@import "blocks/_wrapper.scss";
+@import "blocks/_btn.scss";
+@import "blocks/_logo.scss";
+@import "blocks/_socials.scss";
+@import "blocks/navbar";
+
+// layout-секции //
+@import "./layout/_header";
+@import "./layout/_footer";
+@import "./layout/_hero";
+@import "./layout/_story";
+@import "./layout/_expert";
+@import "./layout/_team";
+@import "./layout/_works";
+@import "./layout/_feedback";
+@import "./layout/_contacts";
+@import "./layout/_chart";

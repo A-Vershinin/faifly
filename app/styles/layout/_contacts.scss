@@ -1,0 +1,67 @@
+.contacts {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #ffffff;
+}
+.contacts__form {
+  margin-bottom: 20px;
+}
+.contacts__form .form-group {
+  margin-bottom: 15px;
+}
+.contacts__form .form-control {
+  padding: 0.5rem 0.75rem;
+}
+.contacts__form textarea.form-control {
+  min-height: 150px;
+}
+.contacts__brand-title,
+.contacts__form-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: $font-second;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #413d4b;
+}
+.contacts__brand-list {
+  @extend %ul-reset;
+}
+.contacts__brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 75px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+@include mf-tablets {
+  .contacts {
+    padding: 40px 0;
+  }
+  .contacts__form .form-control {
+    padding: 0.75rem 1rem;
+  }
+  .contacts__form textarea.form-control {
+    min-height: 200px;
+  }
+  .contacts__form {
+    margin-bottom: 30px;
+  }
+  .contacts__form .form-group {
+    margin-bottom: 24px;
+  }
+}
+@include mf-laptop {
+  .contacts {
+    padding: 70px 0;
+    text-align: left;
+  }
+  .contacts__form {
+    margin-bottom: 0;
+  }
+  .contacts__brand-title,
+  .contacts__form-title {
+    font-size: 22px;
+  }
+}

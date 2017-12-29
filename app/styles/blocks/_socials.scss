@@ -1,0 +1,48 @@
+.socials {
+  @extend %ul-reset;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.socials__item {
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s;
+  svg {
+    fill: #ffffff;
+  }
+  &:hover {
+    border-color: rgba(#00e0d0, 0.7);
+    transform: scale(1.15);
+    svg {
+      fill: rgba(#00e0d0, 0.7);
+      transition: 0.25s;
+    }
+  }
+  &:active {
+    border-color: rgba(#00e0d0, 1);
+    svg {
+      fill: rgba(#00e0d0, 1);
+    }
+  }
+}
+@include mf-tablets {
+}
+@include mf-laptop {
+  .socials__link {
+    width: 38px;
+    height: 38px;
+  }
+}

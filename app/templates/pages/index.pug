@@ -1,0 +1,35 @@
+extends ../basic/_template.pug
+
+block content
+
+  .wrapper
+    //HEADER
+    include ../layout/_header
+    //END HEADER
+    |
+    |
+    //MAIN CONTENT
+
+    main.content
+      include ../layout/_story
+      |
+      |
+      include ../layout/_expert
+      |
+      |
+      include ../layout/_team
+      |
+      |
+      include ../layout/_works
+      |
+      |
+      include ../layout/_feedback
+      |
+      |
+      include ../layout/_contacts
+    //END CONTENT
+    |
+    |
+    //MAIN FOOTER
+    include ../layout/_footer
+    //END FOOTER

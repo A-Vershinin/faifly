@@ -1,0 +1,306 @@
+.chart-bar {
+  position: relative;
+  min-height: 100vh;
+  background-color: #cccccc;
+}
+.chart__box {
+  position: relative;
+  margin-top: 100px;
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+}
+.chart-x {
+  position: absolute;
+  z-index: 40;
+  bottom: 40px;
+  left: 20px;
+  display: block;
+  width: 90%;
+  height: 3px;
+  background-color: #000000;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 50;
+    bottom: 7px;
+    right: 0;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #000000;
+    transform: rotate(20deg);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 50;
+    bottom: -6px;
+    right: 0;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #000000;
+    transform: rotate(-20deg);
+  }
+}
+.chart-x-text {
+  position: absolute;
+  z-index: 40;
+  right: -70px;
+  bottom: 20px;
+}
+.chart-y {
+  position: absolute;
+  z-index: 40;
+  bottom: 17px;
+  left: -225px;
+  display: block;
+  width: 535px;
+  height: 3px;
+  background-color: #000000;
+  transform: rotate(90deg) translateX(-54%);
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    bottom: -6px;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #000000;
+    transform: rotate(20deg);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    bottom: 6px;
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: #000000;
+    transform: rotate(-20deg);
+  }
+}
+.chart-y-text {
+  position: absolute;
+  z-index: 40;
+  top: -60px;
+  left: -30px;
+  transform: rotate(-90deg);
+}
+.chart-count {
+  position: absolute;
+  z-index: 60;
+  top: 14px;
+  width: 20px;
+  &::after {
+    content: "";
+    z-index: 60;
+    top: -20px;
+    left: 0;
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    display: block;
+    background-color: #000000;
+  }
+}
+.chart-count.x-1 {
+  left: 5.3%;
+}
+.chart-count.x-2 {
+  left: 8.3%;
+}
+.chart-count.x-3 {
+  left: 11.2%;
+}
+.chart-count.x-4 {
+  left: 14.4%;
+}
+.chart-count.x-5 {
+  left: 17.4%;
+}
+.chart-count.x-6 {
+   left: 20.3%;
+ }
+.chart-count.x-7 {
+  left: 23.3%;
+}
+.chart-count.x-8 {
+  left: 26.3%;
+}
+.chart-count.x-9 {
+  left: 29.2%;
+}
+.chart-count.x-10 {
+  left: 32.2%;
+}
+.chart-count.x-11 {
+  left: 35.3%;
+}
+.chart-count.x-12 {
+  left: 38%;
+}
+.chart-count.x-13 {
+  left: 41.2%;
+}
+.chart-count.x-14 {
+  left: 44.2%;
+}
+.chart-count.x-15 {
+  left: 47.2%;
+}
+.chart-count.x-16 {
+  left: 50.2%;
+}
+.chart-count.x-17 {
+  left: 53.2%;
+}
+.chart-count.x-18 {
+  left: 56.2%;
+}
+.chart-count.x-19 {
+  left: 59.2%;
+}
+.chart-count.x-20 {
+  left: 62.2%;
+}
+.chart-count.x-21 {
+  left: 65.2%;
+}
+.chart-count.x-22 {
+  left: 68.2%;
+}
+.chart-count.x-23 {
+  left: 71.2%;
+}
+.chart-count.x-24 {
+  left: 73.2%;
+}
+.chart-number {
+  position: absolute;
+  z-index: 60;
+  top: 20px;
+  width: 20px;
+  transform: rotate(-90deg);
+  &::after {
+    content: "";
+    z-index: 60;
+    top: 0;
+    left: 38px;
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    display: block;
+    background-color: #000000;
+    transform: rotate(90deg);
+  }
+}
+// 3%
+// %5 - 1
+.chart-number.y-1 {
+  right: 4%;
+}
+.chart-number.y-2 {
+  right: 10%;
+}
+.chart-number.y-3 {
+  right: 16%;
+}
+.chart-number.y-4 {
+  right: 22%;
+}
+.chart-number.y-5 {
+  right: 28%;
+}
+.chart-number.y-10 {
+  right: 58%;
+}
+.chart-number.y-15 {
+  right: 87%;
+}
+.chart__bar-box {
+  position: relative;
+  width: 84%;
+  height: 54%;
+  margin-left: 45px;
+  margin-top: 25%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+}
+.chart__bar {
+  display: inline-block;
+  width: 10px;
+  margin: 0 1%;
+  background-color: #4f615b;
+}
+.bar-10 {
+  height: 10%;
+}
+.bar-20 {
+  height: 20%;
+}
+.bar-30 {
+  height: 30%;
+}
+.bar-40 {
+  height: 40%;
+}
+.bar-50 {
+  height: 50%;
+}
+.bar-60 {
+  height: 60%;
+}
+.bar-70 {
+  height: 70%;
+}
+.bar-80 {
+  height: 80%;
+}
+.bar-90 {
+  height: 90%;
+}
+.bar-100 {
+  height: 100%;
+}
+.bar-110 {
+  height: 110%;
+}
+.bar-120 {
+  height: 120%;
+}
+.bar-130 {
+  height: 130%;
+}
+.bar-140 {
+  height: 140%;
+}
+.bar-150 {
+  height: 150%;
+}
+.bar-green {
+  background-color: green;
+}
+.bar-yellow {
+  background-color: yellow;
+}
+.bar-red {
+  background-color: red;
+}
+.chart__about {
+  position: absolute;
+  z-index: 50;
+  top: 5%;
+  right: 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px;
+  background-color: #ffffff;
+}
+

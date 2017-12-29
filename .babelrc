@@ -1,0 +1,20 @@
+{
+  "ignore": [
+    "node_modules/**/*",
+    "bower_modules/**/*"
+  ],
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current",
+        "browsers": ["last 2 versions", "safari >= 7"],
+        "modules": false
+      }
+    }],
+    "stage-3"
+  ],
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-es2015-modules-strip"
+  ]
+}

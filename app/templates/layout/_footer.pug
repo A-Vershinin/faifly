@@ -1,0 +1,41 @@
+footer.footer
+  .footer__inner
+    .container
+      .row
+        .col-lg-4.col-md-6.order-lg-1.footer__left
+          .row
+            .col-12.footer__logo
+              include ../blocks/_logo
+            .col-12.footer__left-text lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis 
+              | sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+            .col-12
+              .footer__left-menu
+                a(href="#").footer__left-menu-link HELP 
+                a(href="#").footer__left-menu-link TERMS & CONDITION 
+                a(href="#").footer__left-menu-link PRIVACY
+        .col-lg-4.col-md-6.order-lg-1.order-md-2.footer__center
+          .row
+            h5.col-12.footer__title OUR STUDIO
+            adress.col-12.footer__adress
+              +icon("footer__adress-icon", "marker", "16")
+              span Ruko cucruk, Jl. Radio luar dalem jos 
+                | No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+            a(href="tel:622122243333").col-12.footet__number
+              +icon("footet__number-icon", "phone", "16")
+              | (+62) 21-2224 3333  
+        .col-lg-4.col-md-6.order-lg-1.footer__right
+          .row
+            h5.col-12.footer__title STAY IN TOUCH
+            .col-12.form.footer__subscribe
+              .form-group.col-9
+                input#exampleInputSubscribe.form-control.footer__subscribe-input(type='email',
+                aria-describedby='emailSubscribe',
+                placeholder='Subscribe our newsletter')
+              .form-group.col-3
+                button.btn.footer__subscribe-btn(type='submit')
+                  +icon("footer__subscribe-btn-icon", "paper", "25")
+            .col-12.footer__socials
+              include ../blocks/_socials
+            .col-12.footer__copyright Copyright © 2015 - Tajem Creative
+          
+
